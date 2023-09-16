@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <title>Landing Page</title>
 </head>
 
@@ -16,9 +18,9 @@
         <div id="title">
             <h1>Marketing</h1>
             <h1>Criativo</h1>
-        </div>
+        </div><!-- title -->
 
-        <ul>
+        <ul class="menu-mobile-ul">
             <a href="#">
                 <li>Início</li>
             </a>
@@ -33,8 +35,35 @@
             </a>
             <a href="#" id="Inscreva-se-btn">
                 <li>Já tem uma conta?</li>
-            </a>
-        </ul>
+            </a><!-- Inscreva-se-btn -->
+        </ul><!-- menu-mobile-ul -->
+
+        <div class="mobile">
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list-nested" style="cursor: pointer;"></i>
+            </div><!-- btn-abrir-menu -->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg" style="cursor: pointer;"></i>
+                </div><!-- btn-fechar -->
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Já tem uma conta</a></li>
+                    </ul>
+                </nav>
+
+            </div><!-- menu-mobile -->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div><!-- overlay-menu -->
+        </div> <!-- mobile -->
+
     </header>
 
     <main>
@@ -55,6 +84,7 @@
         </article>
     </main>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
